@@ -26,6 +26,9 @@ Hier probeer ik uit te zoeken en uit te leggen hoe je via Telegram een Neopixel 
 - Open de Serial Monitor met een Baud Rate van 115200.
 - Als je /start verstuurd naar je bot zou je een reactie moeten krijgen.
 
+![](searching.jpg)
+Ik kon niet verbinden met m'n hotspot. Ik kwam erachter dat aan het einde van mijn SSID een spatie stond. Check heel goed hoe de string eruit ziet.
+
 ## Stap 4 - Code hervormen voor Neopixel
 - We moeten de Adafruit Neopixel library includen. Voeg "#include <Adafruit_NeoPixel.h>" toe bij de andere includes.
 - Onder je includes: #define PIN *je LED pin*, #define NUM *aantal leds on strip* en Adafruit_NeoPixel pixels(NUM, PIN, NEO_GRB + NEO_KHZ800);
