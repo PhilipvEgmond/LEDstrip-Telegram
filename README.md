@@ -44,7 +44,8 @@ Laten we eerst beginnen met de lichtjes aan en uitzetten. Gelukkig kunnen we een
 `for (int i = 0; i < NUM; i++){
           pixels.setPixelColor(i, pixels.Color(255, 255, 255));
           pixels.show();
-        }`
+        }
+`
 
 ## Bronnen
 - https://arduinodiy.wordpress.com/2020/01/06/3838/
