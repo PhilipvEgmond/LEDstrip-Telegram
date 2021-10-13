@@ -35,7 +35,7 @@ Ik kon niet verbinden met m'n hotspot. Ik kwam erachter dat aan het einde van mi
   2. Verder gaan we digitalWrite ook niet gebruiker dus verwijder dit allemaal.
   3. Je kan nog comments verwijderen om de code leesbaarder te maken.
 - We moeten de Adafruit Neopixel library includen. Voeg "#include <Adafruit_NeoPixel.h>" toe bij de andere includes.
-- Onder je includes: #define PIN *je LED pin*, #define NUM *aantal leds op strip* en Adafruit_NeoPixel pixels(NUM, PIN, NEO_GRB + NEO_KHZ800);
+- Onder je includes: #define PIN **je LED pin**, #define NUM **aantal leds op strip** en Adafruit_NeoPixel pixels(NUM, PIN, NEO_GRB + NEO_KHZ800);
 - Om de LEDs aan te zetten plaats je bovenin de setup() function: pixels.begin();
 
 ## Stap 5 - Neopixel code
