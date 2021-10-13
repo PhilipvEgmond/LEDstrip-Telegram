@@ -58,6 +58,10 @@ We kunnen op dezelfde manier de kleur aanpassen, hiervoor maken we gebruik van d
 - Zoek de drie knoppen op in de JSON code update text en callback data naar RED, GREEN en BLUE. Hieronder kan je ook de tekst bij de message aanpassen.
 - Kopieer nu de code block van het aanzetten en gebruik dit bij de woorden RED, GREEN en BLUE. Verander hierin de RGB waarden.
 
+## Experimenteren
+Nu je weet hoe je Telegram knoppen kan gebruiken om je Neopixel aan te sturen kan je vrijuit je Neopixel skills toepassen.
+Ik heb een knop gemaakt voor geanimeerd licht. Het lukt me echter niet deze modus uit te zetten tot het de loop helemaal voltooid heeft. Dit komt omdat de code nog geen update binnenhaalt tot deze loop volledig is afgelopen. Ik weet niet zo goed hoe ik dit kan oplossen.
+
 ## Bronnen
 - https://arduinodiy.wordpress.com/2020/01/06/3838/
 - https://www.youtube.com/watch?v=-IC-Z78aTOs&ab_channel=BrianLough
