@@ -41,11 +41,22 @@ Ik kon niet verbinden met m'n hotspot. Ik kwam erachter dat aan het einde van mi
 ## Stap 5 - Neopixel code
 Laten we eerst beginnen met de lichtjes aan en uitzetten. Gelukkig kunnen we een deel van de voorbeeld code recyclen.
 - Zoek de if statement met text === "ON". Hier kunnen we onze code neerzetten om de strip aan te zetten:
-`for (int i = 0; i < NUM; i++){
+```
+for (int i = 0; i < NUM; i++){
           pixels.setPixelColor(i, pixels.Color(255, 255, 255));
           pixels.show();
         }
-`
+```
+- We kunnen ze ook weer uitzetten:
+```
+pixels.clear();
+pixels.show();
+```
+Ik kreeg dit niet meteen aan de praat. Pixels updaten bestaat uit twee stappen: waarden updaten en latenzien. In eerste instantie had ik alleen de setPixelColor, hiermee kregen de lichtjes een nieuwe waarde maar moesten deze nog aannemen met pixels.show(); Ik kwam tot deze realisatie na een oud voorbeeld erbij te pakken.
+
+We kunnen op dezelfde manier de kleur aanpassen, hiervoor maken we gebruik van de andere 3 knoppen die er al staan.
+- Zoek de drie knoppen op in de JSON code update text en callback data naar RED, GREEN en BLUE. Hieronder kan je ook de tekst bij de message aanpassen.
+- Kopieer nu de code block van het aanzetten en gebruik dit bij de woorden RED, GREEN en BLUE. Verander hierin de RGB waarden.
 
 ## Bronnen
 - https://arduinodiy.wordpress.com/2020/01/06/3838/
