@@ -32,7 +32,7 @@ Ik kon niet verbinden met m'n hotspot. Ik kwam erachter dat aan het einde van mi
 ## Stap 4 - Code hervormen voor Neopixel
 - We moeten de Adafruit Neopixel library includen. Voeg "#include <Adafruit_NeoPixel.h>" toe bij de andere includes.
 - Onder je includes: #define PIN *je LED pin*, #define NUM *aantal leds on strip* en Adafruit_NeoPixel pixels(NUM, PIN, NEO_GRB + NEO_KHZ800);
-- 
+- Om de LEDs aan te zetten plaats je bovenin de setup() function: pixels.begin();
 
 ## Bronnen
 - https://arduinodiy.wordpress.com/2020/01/06/3838/
